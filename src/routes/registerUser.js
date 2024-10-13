@@ -25,9 +25,7 @@ registerRouter.post("/register", async (req, res) => {
         });
         res.json({
             message: "User created!",
-            user: {
-                createdUser
-            }
+            createdUser
         }).status(201);
     } catch (err) {
         if (err instanceof z.ZodError) {
