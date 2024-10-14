@@ -17,11 +17,15 @@ searchRouter.get("/users", async (req, res) => {
         take
     });
 
+    const totalUsers = await prisma.user.count({ where });
+
     if (users.length === 0) {
-        return res.status(404).json({ message: "Name not found." });
+        return res.status(404).json({ message: "Data not found." });
     }
     res.json({
-        users 
+        amountUsers: totalUsers,
+        users,
+        page: `${page}/${Math.round(totalUsers / take)}`
     });
 });
 
