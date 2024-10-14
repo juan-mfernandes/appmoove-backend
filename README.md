@@ -312,5 +312,5 @@ Assim como a query de pesquisa por nome, o retorno desta busca pelo email do usu
 A princípio, minha ideia era utilizar TypeScript para uma tipagem mais forte, mas fiquei mais confortável com o uso de JavaScript durante o desenvolvimento.
 
 - **Não uso do Docker na aplicação:**
-O Docker seria uma excelente opção para ser implementada no projeto, porém como ainda não tenho conhecimento sólido para a utilização preferi criar o servidor localmente. Mas o Docker será implementado em breve.
+O Docker seria uma excelente opção para ser implementada no projeto, porém como ainda não tenho conhecimento sólido para a utilização, preferi criar o servidor localmente.
 
