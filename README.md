@@ -83,6 +83,7 @@ http://localhost:8080/api/users?name=Maria&page=1
 **Retorno:**
 ```
 {
+    "amountUsers": 11181,
     "users": [
         {
             "id": "0006ac13-6d15-430f-9a52-278cde9d927d",
@@ -184,7 +185,8 @@ http://localhost:8080/api/users?name=Maria&page=1
             "name": "Maria Martins",
             "email": "Roberto.Albuquerque@yahoo.com"
         }
-    ]
+    ],
+    "page": "1/559"
 }
 ```
 Esta query buscará por qualquer registro no banco que possua "Maria" na coluna "name" e retornará apenas 20 resultados por página, começando por padrão na página 1.
@@ -196,6 +198,7 @@ http://localhost:8080/api/users?email=Maria&page=1
 **Retorno:**
 ```
 {
+    "amountUsers": 11181,
     "users": [
         {
             "id": "00028b3c-4427-4c80-a5d2-ed357261713f",
@@ -297,7 +300,8 @@ http://localhost:8080/api/users?email=Maria&page=1
             "name": "Marcos Batista",
             "email": "Maria1@bol.com.br"
         }
-    ]
+    ],
+    "page": "3/559"
 }
 ```
 
